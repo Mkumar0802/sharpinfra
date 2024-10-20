@@ -50,13 +50,44 @@
 	</style>
 
 
+	<style>
+		.navigation .container {
+			display: flex;
+			justify-content: space-between;
+			/* Space between logo and navigation */
+			align-items: center;
+			/* Vertically aligns the logo and nav items */
+		}
+
+		.main-nav {
+			flex-grow: 1;
+			text-align: center;
+			/* Centers the navigation horizontally */
+		}
+
+		.main-nav ul {
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+		}
+
+		.main-nav ul li {
+			display: inline-block;
+			margin: 0 15px;
+			/* Adds spacing between navigation items */
+		}
+	</style>
+
+
+
+
 </head>
 
 <body>
 
 	<header class="header">
 		<div class="top">
-			<div class="container clearfix">
+			<div class="container clearfix" style="background-color: #161925; color: #FDFFFC;" >
 
 				<div class="links">
 					<a href="mailto:sharpinfraprojects@gmail.com"><i class="fa fa-envelope-o"></i>
@@ -69,12 +100,16 @@
 		</div> <!-- end .top -->
 		<div class="navigation">
 			<div class="container clearfix">
-				<div class="logo"><a href="index.html"><img src="images/logo.png" alt="Construct"
-							class="img-responsive"></a></div> <!-- end .logo -->
+				<div class="logo">
+					<a href="index.html">
+					  <img src="./pic/sharplogo2.png" alt="Construct" style="width: 300px; height: 100px; object-fit: cover;"    class="img-responsive">
+					</a>
+				  </div>
+				  
 				<!-- <a href="inquiry.html" class="navigation-button">Inquiry Now</a> -->
 				<nav class="main-nav">
 					<ul class="list-unstyled">
-						<li>
+						<li >
 							<a href="index.html">Home</a>
 							<!-- <ul>
 									<li><a href="index.html">Homepage 1</a></li>
@@ -85,13 +120,13 @@
 						</li>
 						<li>
 							<a href="projects.html">Projects</a>
-							<ul>
-								<!-- <li><a href="projects.html">Projects</a></li>
+							<!-- <ul>
+									<li><a href="projects.html">Projects</a></li>
 									<li><a href="projects-four-column.html">Projects Four Column</a></li>
 									<li><a href="projects-three-column.html">Projects Three Column</a></li>
 									<li><a href="projects-detail.html">Projects Detail</a></li>
-									<li><a href="projects-detail2.html">Projects Detail 2</a></li> -->
-							</ul>
+									<li><a href="projects-detail2.html">Projects Detail 2</a></li>
+								</ul> -->
 						</li>
 						<li class="active">
 							<a href="services.html">Services</a>
@@ -702,57 +737,59 @@
 	</div> <!-- end .section -->
 
 
-	<footer class="footer" style="background-color: #161925; color:#FDFFFC">
-
+	<footer class="footer" style="background-color: #161925; color:#FDFFFC; padding: 40px 0;">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-4">
-					<img src="./pic/sharplogo1.png" alt="construct" class="img-responsive">
-					<p class="color:white;"> we believe in building projects that not only meet industry standards but
-						exceed client expectations. Our expert team collaborates to bring your vision to life, combining
-						cutting-edge techniques with high-quality materials to deliver outstanding results.</p>
-					<div class="social-icons">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-google-plus"></i></a>
-					</div> <!-- end .social-icons -->
-				</div> <!-- end .col-sm-4 -->
-				<div class="col-sm-3 col-sm-offset-1 ">
-					<h4 class="small-heading">Quick Links</h4>
-					<div class="links row ">
-						<div class="col-xs-6">
-							<a href="#">Home</a>
-							<a href="projects.html">Projects</a>
-							<a href="services.html">service</a>
-						</div> <!-- end .col-xs-6 -->
-						<div class="col-xs-6">
-							<a href="about-us.html">About us</a>
-							<!-- <a href="#">Blog</a> -->
-							<a href="./contact.html">Contact Us</a>
-						</div> <!-- end .col-xs-6 -->
-					</div> <!-- end .links -->
-				</div> <!-- end .col-sm-3 -->
-				<div class="col-sm-3 col-sm-offset-1">
-					<h4 class="small-heading">Company Info</h4>
-					<div class="contact">
-						<div class="icon"><i class="ion-ios-location-outline"></i></div>
-						<div class="content">
-							No: 411/6, Aruna complex<br />
-							1st floor, Palani main road, Oddanchatram<br />
-							Dindigul District, Tamilnadu - 624619
-						</div>
-					</div> <!-- end .contact -->
-
-
-				</div> <!-- end .col-sm-3 -->
-			</div> <!-- end .row -->
-			<div class="copyright" style="background-color: #161925; color: #FDFFFC;">
-				&copy; Copyright 2024. All rights reserved. Designed and Developed by <br /> <a
-					href="https://www.s7rtechnology.in/" style="color: #Fe6f11;">S7R Technology</a>
+		  <div class="row">
+			<!-- Logo and About -->
+			<div class="col-sm-4 text-center" style="margin-bottom: 20px;">
+			  <img src="./pic/sharplogo2.png" alt="Construct" style="width: 250px; height: 50px; object-fit: cover;" class="img-responsive">
+			  <p style="color:white; padding: 10px 20px;">
+				We believe in building projects that not only meet industry standards but exceed client expectations. Our expert team collaborates to bring your vision to life, combining cutting-edge techniques with high-quality materials to deliver outstanding results.
+			  </p>
+			  <div class="social-icons" style="margin-top: 15px;">
+				<a href="#"><i class="fa fa-facebook" style="color: white; margin-right: 10px;"></i></a>
+				<a href="#"><i class="fa fa-twitter" style="color: white; margin-right: 10px;"></i></a>
+				<a href="#"><i class="fa fa-google-plus" style="color: white;"></i></a>
+			  </div>
 			</div>
-
+	  
+			<!-- Quick Links -->
+			<div class="col-sm-3 col-sm-offset-1 text-center" style="margin-bottom: 20px;">
+			  <h4 class="small-heading" style="color: #Fe6f11;">Quick Links</h4>
+			  <div class="links row" style="text-align: center;">
+				<div class="col-xs-6">
+				  <a href="#" style="color: #FDFFFC; display: block; margin: 5px 0;">Home</a>
+				  <a href="projects.html" style="color: #FDFFFC; display: block; margin: 5px 0;">Projects</a>
+				  <a href="services.html" style="color: #FDFFFC; display: block; margin: 5px 0;">Service</a>
+				</div>
+				<div class="col-xs-6">
+				  <a href="about-us.html" style="color: #FDFFFC; display: block; margin: 5px 0;">About Us</a>
+				  <a href="./contact.html" style="color: #FDFFFC; display: block; margin: 5px 0;">Contact Us</a>
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- Company Info -->
+			<div class="col-sm-3 col-sm-offset-1 text-center">
+			  <h4 class="small-heading" style="color: #Fe6f11;">Company Info</h4>
+			  <div class="contact">
+				<div class="icon"><i class="ion-ios-location-outline" style="color: #Fe6f11;"></i></div>
+				<div class="content" style="color: #FDFFFC;">
+				  No: 411/6, Aruna complex<br />
+				  1st floor, Palani main road, Oddanchatram<br />
+				  Dindigul District, Tamilnadu - 624619
+				</div>
+			  </div>
+			</div>
+		  </div> <!-- end .row -->
+	  
+		  <!-- Copyright -->
+		  <div class="copyright text-center" style="background-color: #161925; color: #FDFFFC; padding: 20px 0;">
+			&copy; Copyright 2024. All rights reserved. Designed and Developed by
+			<a href="https://www.s7rtechnology.in/" style="color: #Fe6f11;">S7R Technology</a>
+		  </div>
 		</div> <!-- end .container -->
-	</footer> <!-- end .footer -->
+	  </footer> <!-- end .footer -->
 
 	<!-- jQuery -->
 	<script src="js/jquery-1.11.2.min.js"></script>
