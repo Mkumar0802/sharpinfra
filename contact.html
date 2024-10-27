@@ -23,7 +23,7 @@
 		<!-- Style.css -->
 		<link href="css/style.css" rel="stylesheet">
 
-
+	
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 
@@ -84,6 +84,47 @@
 		padding: 20px;
 	}
 </style>
+
+
+<style>
+
+
+	/* Default icon color */
+	.icon i {
+		font-size: 1.5rem;
+		color: #000; /* Set default color to black */
+	}
+
+	/* Individual icon colors */
+	.contact .fa-envelope {
+		color: #1a73e8; /* Blue for email */
+	}
+
+	.contact .fa-phone {
+		color: #34a853; /* Green for phone */
+	}
+
+	.contact .fa-whatsapp {
+		color: #25D366; /* WhatsApp green */
+	}
+
+	.contact .fa-map-marker-alt {
+		color: #ea4335; /* Red for location */
+	}
+
+	/* Link styling */
+	.contact a {
+		color: #000;
+		text-decoration: none;
+	}
+
+	.contact a:hover {
+		text-decoration: underline;
+	}
+</style>
+
+
+
 
 
 
@@ -203,34 +244,35 @@
 					<h1 class="center-heading"><small>We Are Here</small>Contact Us</h1>
 					<div class="contacts row">
 						<div class="contact col-sm-3">
-							<div class="icon"><i class="fa fa-envelope-o"></i></div>
+							<div class="icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></div>
 							<span>
 								<a href="mailto:sharpinfraprojects@gmail.com">sharpinfraprojects@gmail.com</a>
 							</span>
-						</div> <!-- end .contact -->
-						
+						</div>
+				
 						<div class="contact col-sm-3">
-							<div class="icon"><i class="fa fa-phone"></i></div>
+							<div class="icon" aria-label="Phone"><i class="fa-solid fa-phone"></i></div>
 							<span>
 								<a href="tel:+918754739917">+91 87547 39917</a>
 							</span>
-						</div> <!-- end .contact -->
-						
+						</div>
+				
 						<div class="contact col-sm-3">
-							<div class="icon">    <i class="fa fa-whatsapp"></i></div>
-							<span><a href="https://wa.me/918754739917" target="_blank">+91 87547 39917</a></span>
-						</div> <!-- end .contact -->
-						
-						<div class="contact col-sm-3">
-							<div class="icon"><i class="fa fa-map-marker"></i></div>
+							<div class="icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></div>
 							<span>
-								<a href="https://www.google.com/maps/place/10%C2%B029'08.6%22N+77%C2%B044'45.4%22E/@10.4857347,77.7433703,17z/data=!3m1!4b1!4m4!3m3!8m2!3d10.4857347!4d77.7459452?hl=en" target="_blank">
+								<a href="https://wa.me/918754739917" target="_blank" rel="noopener noreferrer">+91 87547 39917</a>
+							</span>
+						</div>
+				
+						<div class="contact col-sm-3">
+							<div class="icon" aria-label="Location"><i class="fa-solid fa-map-marker-alt"></i></div>
+							<span>
+								<a href="https://www.google.com/maps/place/10%C2%B029'08.6%22N+77%C2%B044'45.4%22E/@10.4857347,77.7433703,17z/data=!3m1!4b1!4m4!3m3!8m2!3d10.4857347!4d77.7459452?hl=en" target="_blank" rel="noopener noreferrer">
 									No: 411/6, Aruna complex, 1st floor, Palani main road, Oddanchatram, Dindigul District, Tamil Nadu - 624619
 								</a>
 							</span>
-						</div> <!-- end .contact -->
-						
-					</div> <!-- end .contacts -->
+						</div>
+					</div>
 					<div class="row">
 						<div class="col-sm-10 col-sm-offset-1">
 							<div class="contact-form-stripes"></div>

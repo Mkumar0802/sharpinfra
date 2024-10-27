@@ -24,6 +24,7 @@
 		<link href="css/style.css" rel="stylesheet">
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -94,6 +95,21 @@
 	.content {
 		padding: 20px;
 	}
+	    /* Hide additional items initially */
+		.portfolio .item.hidden {
+        	display: none;
+    }
+
+	.item {
+    display: inline-block;
+    width: 100%;
+}
+#portfolio {
+    overflow: hidden;
+}
+
+
+
 </style>
 
 
@@ -418,18 +434,12 @@
 							</div> <!-- end .item -->
 						</div> <!-- end .portfolio -->
 						<div class="portfolio-load-more">
-							<a href="./contact.html" class="button border red">Load More</a>
-						</div> <!-- end .portfolio-load-more -->
+							<a href="#" id="loadMore">LOAD MORE</a>
+						</div>
 					</div> <!-- end .portfolio-wrapper -->
-					<div class="call-to-action clearfix">
-						<div class="image"><img src="images/cta.png" alt="worker"></div>
-						<div class="content">
-							<h3>Get Your Free Consultant</h3>
-							<p>We are a company that offers design and build services for you from initial sketches to the final construction.</p>
-						</div> <!-- end .content -->
-						<div class="cta-button"><a href="#" class="button border red">Contact Us</a></div>
-						<div class="ruler"></div>
-					</div> <!-- end .call-to-action -->
+
+
+					
 				</div> <!-- end .container -->
 			</div> <!-- end .inner -->
 		</div> <!-- end .section -->
@@ -488,6 +498,69 @@
 			</div> <!-- end .container -->
 		  </footer> <!-- end .footer -->
 
+
+
+
+		  <script>
+			$(document).ready(function () {
+    // Number of items to display initially
+    var itemsToShowInitially = 6;
+    var $portfolioItems = $("#portfolio .item");
+
+    // Initially hide items beyond the specified number
+    $portfolioItems.slice(itemsToShowInitially).hide();
+
+    // "Load More" button functionality
+    $("#loadMore").on("click", function (e) {
+        e.preventDefault();
+
+        // Show the next set of hidden items
+        $portfolioItems.filter(":hidden").slice(0, itemsToShowInitially).slideDown();
+
+        // Hide "Load More" button if no more items are left to show
+        if ($portfolioItems.filter(":hidden").length === 0) {
+            $(this).fadeOut("slow");
+        }
+    });
+
+    // Filtering functionality
+    $("#portfolio-filters button").on("click", function () {
+        var filterValue = $(this).data("filter");
+
+        // Reset "Load More" button visibility
+        $("#loadMore").show();
+
+        if (filterValue === "*") {
+            // Show all items when "All" is selected
+            $portfolioItems.show();
+        } else {
+            // Hide all items first, then show only the filtered items
+            $portfolioItems.hide().filter(filterValue).show();
+        }
+
+        // Hide items beyond the initial number for filtered items
+        $portfolioItems.filter(":visible").slice(itemsToShowInitially).hide();
+
+        // Adjust "Load More" button visibility
+        if ($portfolioItems.filter(":visible:hidden").length === 0) {
+            $("#loadMore").hide();
+        } else {
+            $("#loadMore").show();
+        }
+    });
+});
+
+
+		</script>
+	
+
+
+
+
+
+
+
+
 		<!-- jQuery -->
 		<script src="js/jquery-1.11.2.min.js"></script>
 		<!-- Bootstrap -->
@@ -508,5 +581,7 @@
 
 	</body>
 
-<!-- Mirrored from demoxml.com/html/construct/projects.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Oct 2024 16:03:58 GMT -->
+	
+	
+	
 </html>
