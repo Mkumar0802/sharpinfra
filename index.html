@@ -6,8 +6,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Construct - Building & Construction PSD Template</title>
-
+	<title>Sharp Infra Projects</title>
+	<link rel="icon" type="image/x-icon" href="./images/sharp logo (3).png">
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<!-- Font Awesome -->
@@ -89,6 +89,95 @@
 		.content {
 			padding: 20px;
 		}
+
+
+     /* General Section Styling */
+.section {
+    padding: 120px;
+    background-size: cover;
+    background-position: center;
+}
+
+.inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+/* Heading Styling */
+.x-large-heading {
+    font-size: 2.5em;
+    margin-top: -20px;
+}
+
+
+
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .section {
+        padding: 60px 20px;
+    }
+
+    .content-wrapper {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .x-large-heading {
+        font-size: 1.8em;
+    }
+
+   
+
+   
+}
+
+@media (max-width: 425px) {
+    .section {
+        padding: 40px 15px;
+    }
+
+    .x-large-heading {
+        font-size: 1.5em;
+    }
+
+   
+   
+}
+
+		/* Default (Desktop) View */
+.separator {
+    margin: 0 10px;
+    display: inline;
+}
+
+.mobile-break {
+    display: none;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .separator {
+        display: none; /* Hide the separator in mobile view */
+    }
+
+    .mobile-break {
+        display: inline; /* Show the line break in mobile view */
+    }
+}
+
+		
 	</style>
 
 
@@ -97,7 +186,7 @@
 <body>
 
 	<!-- WhatsApp Icon Overlay -->
-	<a href="https://wa.me/yourwhatsappnumber" class="whatsapp-icon" target="_blank">
+	<a href="https://wa.me/918754739917" class="whatsapp-icon" target="_blank">
 		<i class="fab fa-whatsapp"></i>
 	</a>
 	<header class="header">
@@ -106,10 +195,11 @@
 
 				<div class="links">
 					<a href="mailto:sharpinfraprojects@gmail.com"><i class="fa fa-envelope-o"></i>
-						sharpinfraprojects@gmail.com</a>
-					<span style="margin: 0 10px;">|</span> <!-- Optional separator -->
+						sharpinfraprojects@gmail.com</a> 
+					<span class="separator">|</span> <br class="mobile-break"/>
 					<a href="tel:+918754739917"><i class="fa fa-phone"></i> +91 87547 39917</a>
 				</div>
+				
 
 			</div> <!-- end .container -->
 		</div> <!-- end .top -->
@@ -174,16 +264,19 @@
 		<!-- <a href="inquiry.html" class="navigation-button">Inquiry Now</a> -->
 	</div> <!-- end .responsive-menu -->
 
-	<div class="section large clear" style="background-image: url('./pic/banner1.jpg');">
+	<div class="section large clear" style="background-image: url('./pic/banner1.jpg');   ">
 		<div class="inner">
-			<div class="container">
+			<div class="container" >
 				<div class="row">
-					<div class="col-sm-6">
-						<h1 class="x-large-heading"><small>We</small>Build<small>Great Projects</small></h1>
-						<p>We eliminate the hassle of managing multiple firms by providing a seamless architecture and
+					<div class="col-sm-6" style="margin-top: -180px;">
+						<h1 class="x-large-heading" style="margin-top: -20px; color: black;"><small>We</small>Build<small>Great Projects</small></h1>
+						<p style="margin-top: -20px;">
+							We eliminate the hassle of managing multiple firms by providing a seamless architecture and
 							construction service under one roof. From concept to completion, we handle everything with
-							precision and professionalism</p>
-						<p class="button-list">
+							precision and professionalism.
+						</p>
+						
+						<p class="button-list" style="margin-top: -20px;">
 							<a href="./contact.html" class="button border yellow clear">Contact Us</a>
 							<a href="./pic/sharp.pdf" class="button border green clear" download>Download Brochure</a>
 						</p>
@@ -194,7 +287,7 @@
 		</div> <!-- end .inner -->
 	</div> <!-- end .section -->
 
-	<div class="section no-padding-top light" style="background-color: #161925;">
+	<div class="section no-padding-top light" style="background-color: #f6f6f6;">
 		<div class="inner">
 			<div class="container">
 				<div class="tabpanel section-tabs no-line" role="tabpanel">
@@ -347,7 +440,7 @@
 									</div> <!-- end .bordered-image -->
 								</div> <!-- end .col-sm-6 -->
 							</div> <!-- end .row -->
-						</div>`
+						</div>
 						<!-- end .tab-panel -->
 						<div role="tabpanel" class="tab-pane fade" id="heading-tab6">
 							<div class="row">

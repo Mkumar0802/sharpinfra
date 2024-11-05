@@ -8,7 +8,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Construct - Building & Construction PSD Template</title>
+	<link rel="icon" type="image/x-icon" href="./images/sharp logo (3).png">
+
 
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -77,56 +78,92 @@
 			margin: 0 15px;
 			/* Adds spacing between navigation items */
 		}
+
+		/* Default (Desktop) View */
+		.separator {
+			margin: 0 10px;
+			display: inline;
+		}
+
+		.mobile-break {
+			display: none;
+		}
+
+		/* Mobile View */
+		@media (max-width: 768px) {
+			.separator {
+				display: none;
+				/* Hide the separator in mobile view */
+			}
+
+			.mobile-break {
+				display: inline;
+				/* Show the line break in mobile view */
+			}
+		}
 	</style>
 
 
-<style>
-	/* WhatsApp Icon styles */
-	.whatsapp-icon {
-		position: fixed;
-		bottom: 20px;
-		right: 20px;
-		background-color: #25D366;
-		color: white;
-		border-radius: 50%;
-		padding: 15px;
-		font-size: 30px;
-		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-		z-index: 100;
-	}
+	<style>
+		/* WhatsApp Icon styles */
+		.whatsapp-icon {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			background-color: #25D366;
+			color: white;
+			border-radius: 50%;
+			padding: 15px;
+			font-size: 30px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+			z-index: 100;
+		}
 
-	.whatsapp-icon:hover {
-		background-color: #20b954;
-		cursor: pointer;
-	}
+		.whatsapp-icon:hover {
+			background-color: #20b954;
+			cursor: pointer;
+		}
 
-	/* Body styling for the page */
-	body {
-		margin: 0;
-		font-family: Arial, sans-serif;
-	}
+		/* Body styling for the page */
+		body {
+			margin: 0;
+			font-family: Arial, sans-serif;
+		}
 
-	/* Optional: Styling for content below the overlay */
-	.content {
-		padding: 20px;
-	}
-</style>
+		/* Optional: Styling for content below the overlay */
+		.content {
+			padding: 20px;
+		}
+
+		/* Mobile View */
+		@media (max-width: 768px) {
+			.separator {
+				display: none;
+				/* Hide the separator in mobile view */
+			}
+
+			.mobile-break {
+				display: inline;
+				/* Show the line break in mobile view */
+			}
+		}
+	</style>
 
 </head>
 
 <body>
-<!-- WhatsApp Icon Overlay -->
-<a href="https://wa.me/yourwhatsappnumber" class="whatsapp-icon" target="_blank">
-	<i class="fab fa-whatsapp"></i>
-</a>
+	<!-- WhatsApp Icon Overlay -->
+	<a href="https://wa.me/918754739917" class="whatsapp-icon" target="_blank">
+		<i class="fab fa-whatsapp"></i>
+	</a>
 	<header class="header">
-		<div class="top" style="background-color: #161925; color: #FDFFFC;" >
-			<div class="container clearfix" >
+		<div class="top" style="background-color: #161925; color: #FDFFFC;">
+			<div class="container clearfix">
 
 				<div class="links">
 					<a href="mailto:sharpinfraprojects@gmail.com"><i class="fa fa-envelope-o"></i>
 						sharpinfraprojects@gmail.com</a>
-					<span style="margin: 0 10px;">|</span> <!-- Optional separator -->
+					<span class="separator">|</span> <br class="mobile-break" />
 					<a href="tel:+918754739917"><i class="fa fa-phone"></i> +91 87547 39917</a>
 				</div>
 
@@ -136,14 +173,15 @@
 			<div class="container clearfix">
 				<div class="logo">
 					<a href="index.html">
-					  <img src="./pic/sharplogo2.png" alt="Construct" style="width: 300px; height: 100px; object-fit: cover;"    class="img-responsive">
+						<img src="./pic/sharplogo2.png" alt="Construct"
+							style="width: 300px; height: 100px; object-fit: cover;" class="img-responsive">
 					</a>
-				  </div>
-				  
+				</div>
+
 				<!-- <a href="inquiry.html" class="navigation-button">Inquiry Now</a> -->
 				<nav class="main-nav">
 					<ul class="list-unstyled">
-						<li >
+						<li>
 							<a href="index.html">Home</a>
 							<!-- <ul>
 									<li><a href="index.html">Homepage 1</a></li>
@@ -773,57 +811,61 @@
 
 	<footer class="footer" style="background-color: #161925; color:#FDFFFC; padding: 40px 0;">
 		<div class="container">
-		  <div class="row">
-			<!-- Logo and About -->
-			<div class="col-sm-4 text-center" style="margin-bottom: 20px;">
-			  <img src="./pic/sharplogo2.png" alt="Construct" style="width: 250px; height: 50px; object-fit: cover;" class="img-responsive">
-			  <p style="color:white; padding: 10px 20px;">
-				We believe in building projects that not only meet industry standards but exceed client expectations. Our expert team collaborates to bring your vision to life, combining cutting-edge techniques with high-quality materials to deliver outstanding results.
-			  </p>
-			  <div class="social-icons" style="margin-top: 15px;">
-				<a href="#"><i class="fab fa-facebook" style="color: white; margin-right: 10px;"></i></a>
-				<a href="#"><i class="fab fa-twitter" style="color: white; margin-right: 10px;"></i></a>
-				<a href="#"><i class="fab fa-google-plus-g" style="color: white;"></i></a>
-			  </div>
-			</div>
-	  
-			<!-- Quick Links -->
-			<div class="col-sm-3 col-sm-offset-1 text-center" style="margin-bottom: 20px;">
-			  <h4 class="small-heading" style="color: #Fe6f11;">Quick Links</h4>
-			  <div class="links row" style="text-align: center;">
-				<div class="col-xs-6">
-				  <a href="#" style="color: #FDFFFC; display: block; margin: 5px 0;">Home</a>
-				  <a href="projects.html" style="color: #FDFFFC; display: block; margin: 5px 0;">Projects</a>
-				  <a href="services.html" style="color: #FDFFFC; display: block; margin: 5px 0;">Service</a>
+			<div class="row">
+				<!-- Logo and About -->
+				<div class="col-sm-4 text-center" style="margin-bottom: 20px;">
+					<img src="./pic/sharplogo2.png" alt="Construct"
+						style="width: 250px; height: 50px; object-fit: cover;" class="img-responsive">
+					<p style="color:white; padding: 10px 20px;">
+						We believe in building projects that not only meet industry standards but exceed client
+						expectations. Our expert team collaborates to bring your vision to life, combining cutting-edge
+						techniques with high-quality materials to deliver outstanding results.
+					</p>
+					<div class="social-icons" style="margin-top: 15px;">
+						<a href="#"><i class="fab fa-facebook" style="color: white; margin-right: 10px;"></i></a>
+						<a href="#"><i class="fab fa-twitter" style="color: white; margin-right: 10px;"></i></a>
+						<a href="#"><i class="fab fa-google-plus-g" style="color: white;"></i></a>
+					</div>
 				</div>
-				<div class="col-xs-6">
-				  <a href="about-us.html" style="color: #FDFFFC; display: block; margin: 5px 0;">About Us</a>
-				  <a href="./contact.html" style="color: #FDFFFC; display: block; margin: 5px 0;">Contact Us</a>
+
+				<!-- Quick Links -->
+				<div class="col-sm-3 col-sm-offset-1 text-center" style="margin-bottom: 20px;">
+					<h4 class="small-heading" style="color: #Fe6f11;">Quick Links</h4>
+					<div class="links row" style="text-align: center;">
+						<div class="col-xs-6">
+							<a href="#" style="color: #FDFFFC; display: block; margin: 5px 0;">Home</a>
+							<a href="projects.html" style="color: #FDFFFC; display: block; margin: 5px 0;">Projects</a>
+							<a href="services.html" style="color: #FDFFFC; display: block; margin: 5px 0;">Service</a>
+						</div>
+						<div class="col-xs-6">
+							<a href="about-us.html" style="color: #FDFFFC; display: block; margin: 5px 0;">About Us</a>
+							<a href="./contact.html" style="color: #FDFFFC; display: block; margin: 5px 0;">Contact
+								Us</a>
+						</div>
+					</div>
 				</div>
-			  </div>
-			</div>
-	  
-			<!-- Company Info -->
-			<div class="col-sm-3 col-sm-offset-1 text-center">
-			  <h4 class="small-heading" style="color: #Fe6f11;">Company Info</h4>
-			  <div class="contact">
-				<div class="icon"><i class="ion-ios-location-outline" style="color: #Fe6f11;"></i></div>
-				<div class="content" style="color: #FDFFFC;">
-				  No: 411/6, Aruna complex<br />
-				  1st floor, Palani main road, Oddanchatram<br />
-				  Dindigul District, Tamilnadu - 624619
+
+				<!-- Company Info -->
+				<div class="col-sm-3 col-sm-offset-1 text-center">
+					<h4 class="small-heading" style="color: #Fe6f11;">Company Info</h4>
+					<div class="contact">
+						<div class="icon"><i class="ion-ios-location-outline" style="color: #Fe6f11;"></i></div>
+						<div class="content" style="color: #FDFFFC;">
+							No: 411/6, Aruna complex<br />
+							1st floor, Palani main road, Oddanchatram<br />
+							Dindigul District, Tamilnadu - 624619
+						</div>
+					</div>
 				</div>
-			  </div>
+			</div> <!-- end .row -->
+
+			<!-- Copyright -->
+			<div class="copyright text-center" style="background-color: #161925; color: #FDFFFC; padding: 20px 0;">
+				&copy; Copyright 2024. All rights reserved. Designed and Developed by
+				<a href="https://www.s7rtechnology.in/" style="color: #Fe6f11;">S7R Technology</a>
 			</div>
-		  </div> <!-- end .row -->
-	  
-		  <!-- Copyright -->
-		  <div class="copyright text-center" style="background-color: #161925; color: #FDFFFC; padding: 20px 0;">
-			&copy; Copyright 2024. All rights reserved. Designed and Developed by
-			<a href="https://www.s7rtechnology.in/" style="color: #Fe6f11;">S7R Technology</a>
-		  </div>
 		</div> <!-- end .container -->
-	  </footer> <!-- end .footer -->
+	</footer> <!-- end .footer -->
 
 	<!-- jQuery -->
 	<script src="js/jquery-1.11.2.min.js"></script>
